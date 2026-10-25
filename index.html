@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyCapSolid — Кейкапы нового уровня</title>
+    <meta name="description" content="KeyCapSolid — коллекционные кейкапы для персонализации механических клавиатур.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">KeyCapSolid</div>
+
+        <nav>
+            <a href="#home">Главная</a>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">О бренде</a>
+        </nav>
+
+        <button class="cart-link cart-toggle" id="cart-toggle" type="button">
+    Корзина <span id="cart-count">0</span>
+</button>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="eyebrow">ДИЗАЙН. ДЕТАЛИ. ИНДИВИДУАЛЬНОСТЬ.</p>
+
+            <h1>Твоя клавиатура.<br>Твои правила.</h1>
+
+            <p class="hero-description">
+                Кейкапы, которые превращают привычную клавиатуру
+                в отражение твоего стиля.
+            </p>
+
+            <a class="primary-button" href="#catalog">
+                Исследовать коллекцию →
+            </a>
+        </section>
+
+       
+<section id="catalog" class="catalog">
+    <p class="eyebrow">НАША КОЛЛЕКЦИЯ</p>
+    <h2>Меньше обычного. Больше твоего.</h2>
+
+    <p class="catalog-intro">
+        Три направления дизайна. Один стиль — твой.
+    </p>
+
+    <div class="product-grid">
+
+        <article class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=900&q=85"
+                    alt="Механическая клавиатура в минималистичном стиле"
+                    loading="lazy"
+                >
+                <span class="product-number">01</span>
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">ESSENTIAL COLLECTION</p>
+                <h3>Mono</h3>
+                <p class="product-description">
+                    Чистые формы и спокойные оттенки.
+                    Ничего лишнего.
+                </p>
+                <div class="product-bottom">
+    <span class="product-price">990 ₽</span>
+    <button
+        class="add-to-cart"
+        type="button"
+        data-id="mono"
+        aria-label="Добавить Mono в корзину"
+    >+ В корзину</button>
+</div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=85"
+                    alt="Клавиатура с выразительным дизайном"
+                    loading="lazy"
+                >
+                <span class="product-number">02</span>
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">ARTISAN COLLECTION</p>
+                <h3>Obsidian</h3>
+                <p class="product-description">
+                    Глубокие тёмные тона и акцент
+                    на каждой детали.
+                </p>
+                <div class="product-bottom">
+    <span class="product-price">1490 ₽</span>
+    <button
+        class="add-to-cart"
+        type="button"
+        data-id="mono"
+        aria-label="Добавить Mono в корзину"
+    >+ В корзину</button>
+</div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image">
+                <img
+                    src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=900&q=85"
+                    alt="Современная клавиатура для персонализации"
+                    loading="lazy"
+                >
+                <span class="product-number">03</span>
+            </div>
+
+            <div class="product-info">
+                <p class="product-category">STUDIO COLLECTION</p>
+                <h3>Soft Touch</h3>
+                <p class="product-description">
+                    Современная эстетика и мягкие
+                    цветовые сочетания.
+                </p>
+                <div class="product-bottom">
+    <span class="product-price">1090 ₽</span>
+    <button
+        class="add-to-cart"
+        type="button"
+        data-id="mono"
+        aria-label="Добавить Mono в корзину"
+    >+ В корзину</button>
+</div>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="catalog-note">
+        Концептуальные коллекции учебного проекта.
+        Цены указаны для демонстрации.
+    </p>
+</section>
+
+
+        <section id="about" class="about">
+            <p class="eyebrow">О KEYCAPSOLID</p>
+            <h2>Каждая деталь имеет значение.</h2>
+
+            <p>
+                Мы создаём концепцию кейкапов для тех,
+                кто ценит продуманный дизайн и индивидуальность.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 KeyCapSolid. Учебный проект.</p>
+        <p>Вымышленный бренд. Реальные платежи не принимаются.</p>
+    </footer>
+
+<div class="cart-overlay" id="cart-overlay" hidden>
+    <section
+        class="cart-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="cart-title"
+    >
+        <div class="cart-header">
+            <div>
+                <p class="eyebrow">KEYCAPSOLID STORE</p>
+                <h2 id="cart-title">Твоя корзина</h2>
+            </div>
+
+            <button
+                class="cart-close"
+                id="cart-close"
+                type="button"
+                aria-label="Закрыть корзину"
+            >×</button>
+        </div>
+
+        <div id="cart-items" class="cart-items">
+            <p class="cart-empty">Твоя корзина пока пуста.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Итого</span>
+                <strong id="cart-total">0 ₽</strong>
+            </div>
+
+            <button class="checkout-button" id="checkout-button" type="button" disabled>
+                Демонстрация заказа
+            </button>
+
+            <p class="cart-disclaimer">
+                Учебный проект. Оплата и реальные заказы недоступны.
+            </p>
+        </div>
+    </section>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
